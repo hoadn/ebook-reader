@@ -1,0 +1,293 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".MenuActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_main"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white_overlay" >
+        
+        <Button 
+            android:id="@+id/logout_menu"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:text="LOGOUT"
+            android:textSize="40sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/dark_button_selector"
+            />
+        
+        <ImageButton
+            android:id="@+id/back_button_main"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back"
+            />
+        <ImageButton
+            android:id="@+id/home_button_main"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_toLeftOf="@id/back_button_main"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/home"
+            />
+        <ImageButton
+            android:id="@+id/settings_button_main"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_toLeftOf="@id/home_button_main"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/work"
+            />
+        <ImageButton
+            android:id="@+id/shop_button_main"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_toLeftOf="@id/settings_button_main"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cart"
+            />                          
+    </RelativeLayout>
+    
+	<TextView
+        android:id="@+id/main_menu"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top_bar_main"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/heading"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="OPTIONS"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp" />
+
+    <Button
+        android:id="@+id/show_chapters"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/main_menu"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_selector"
+        android:padding="10dp"
+        android:text="Hide/Show Chapters"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/summary"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/show_chapters"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selector"
+        android:padding="10dp"
+        android:text="Event Summary"
+        android:textSize="36sp" />
+
+	<TextView
+        android:id="@+id/share"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/summary"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/heading"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="SHARE"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp" />    
+    
+	<LinearLayout
+	    android:id="@+id/share_bar"
+	    android:layout_marginTop="30dp"
+	    android:layout_below="@id/share"
+	    android:layout_height="100dp"
+	    android:layout_width="350dp"
+	    android:layout_alignParentRight="true"
+	    android:background="@color/white_overlay"
+	    >
+       	<ImageButton
+            android:id="@+id/facebook_share"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/facebook"
+            />
+       	<ImageButton
+            android:id="@+id/google_share"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/googleplus"
+            />
+       	<ImageButton
+            android:id="@+id/twitter_share"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"            
+            android:layout_marginRight="10dp"
+            android:background="@drawable/twitter"
+            />
+       	<ImageButton
+            android:id="@+id/tumbl_share"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"            
+            android:background="@drawable/tumblr"
+            />
+	</LinearLayout>    
+	
+    <ImageButton
+        android:id="@+id/book_cover"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="250dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gatsby" />
+    
+    
+	<TextView
+        android:id="@+id/enjoy_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top_bar_main"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/heading"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Enjoying the Book?"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp" />    
+        
+	<LinearLayout
+	    android:layout_below="@id/enjoy_bar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="350dp"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/white_overlay"
+	    >	
+	    <LinearLayout
+	        android:layout_height="350dp"
+	        android:layout_width="266dp"
+	        android:background="@drawable/outline"
+	        android:orientation="vertical"
+	        >
+	        <ImageView 
+	            android:scaleType="fitXY"
+	            android:layout_width="266dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/amazon"
+	            android:layout_marginRight="2dp"
+	            />
+	        <TextView 
+	            android:width="1dp"
+	            android:layout_width="fill_parent"
+	            android:layout_height="270dp"
+	            android:layout_marginLeft="4dp"
+	            android:layout_marginRight="4dp"
+	            android:text="Click Here for other books by F. Scott. Fitzgerald"
+	            android:textSize="40sp"
+	            android:gravity="center"
+	            android:textColor="#000000"
+	            android:textStyle="bold"
+	            />
+	    </LinearLayout>    
+	    <LinearLayout
+	        android:layout_height="350dp"
+	        android:layout_width="266dp"
+	        android:orientation="vertical"
+	        android:background="@drawable/outline">
+	        <ImageView 
+	            android:scaleType="fitXY"
+	            android:layout_width="266dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/youtube"
+	            android:layout_marginLeft="1dp"
+	            android:layout_marginRight="1dp"
+	            />
+	        <TextView 
+	            android:width="1dp"
+	            android:layout_width="fill_parent"
+	            android:layout_height="270dp"
+	            android:layout_marginLeft="4dp"
+	            android:layout_marginRight="4dp"
+	            android:text="Click Here to view the trailer for the upcoming film"
+	            android:textSize="36sp"
+	            android:gravity="center"
+	            android:textColor="#000000"
+	            android:textStyle="bold"
+	            />	       
+	    </LinearLayout>        
+		<LinearLayout
+	     android:layout_height="350dp"
+	     android:layout_width="266dp"
+	     android:background="@drawable/outline"
+	     android:orientation="vertical"
+	     >
+	 	 <ImageView 
+	         android:scaleType="fitXY"
+	         android:layout_width="266dp"
+	         android:layout_height="80dp"
+	         android:background="@drawable/sparknotes"
+	         android:layout_marginLeft="2dp"
+	         />
+	     <TextView 
+	         android:width="1dp"
+	         android:layout_width="fill_parent"
+	         android:layout_height="270dp"
+	         android:layout_marginLeft="4dp"
+	         android:layout_marginRight="4dp"
+	         android:text="Click Here for an analysis of the book"
+	         android:textSize="40sp"
+	         android:gravity="center"
+	         android:textColor="#000000"
+	         android:textStyle="bold"
+	         />
+		</LinearLayout>
+	</LinearLayout>
+
+	<TextView
+	    android:id="@+id/cover_name"
+	    android:layout_width="400dp"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/show_chapters"
+	    android:layout_alignLeft="@+id/book_cover"
+	    android:text="Currently Reading:"
+	    android:textColor="#FFFFFF"
+	    android:textSize="36sp" />
+
+</RelativeLayout>

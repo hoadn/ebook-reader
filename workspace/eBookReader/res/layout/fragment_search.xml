@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment" >
+
+   <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+	>	
+		<RelativeLayout
+		    android:layout_marginTop="40dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="700dp"
+		    android:background="@color/black_overlay">
+
+		    <TextView
+		    	android:id="@+id/search_text"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"		  
+		        android:layout_marginTop="20dp"      
+		        android:text="Search by entering parts of any of the following filters:"
+		        android:textSize="26sp"
+		        android:gravity="center"
+		        android:textColor="#FFFFFF"
+		        />
+		    
+		    <EditText
+		        android:id="@+id/author_edit"
+		        android:layout_width="300dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="100dp"
+		        android:ems="10"
+		        android:text="F. Sco"
+		        android:padding="10dp"
+		        android:hint="Author" 
+		        android:textColor="#FFFFFF"
+		        android:textSize="24sp"
+		        android:background="@drawable/edittext_selector"
+				/>
+		    <EditText
+		        android:id="@+id/title_edit"
+		        android:layout_width="300dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="20dp"
+		        android:layout_below="@id/author_edit"
+		        android:ems="10"
+		        android:padding="10dp"
+		        android:hint="Title" 
+		        android:textColor="#FFFFFF"
+		        android:textSize="24sp"
+		        android:background="@drawable/edittext_selector"
+		        />
+		    <EditText
+		        android:id="@+id/genre_edit"
+		        android:layout_width="300dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="20dp"
+		        android:layout_below="@id/title_edit"
+		        android:ems="10"
+		        android:padding="10dp"
+		        android:hint="Genre" 
+		        android:textColor="#FFFFFF"
+		        android:textSize="24sp"
+		        android:background="@drawable/edittext_selector"
+		        />		        		    
+		    <TextView
+		        android:id="@+id/results_text"
+		        android:layout_height="70dp"
+		        android:layout_width="fill_parent"
+		        android:layout_centerHorizontal="true"		  
+		        android:layout_marginTop="50dp"      
+		        android:text="Results"
+		        android:gravity="center"
+		        android:background="@drawable/heading"
+		        android:layout_below="@id/genre_edit"
+		        android:textSize="36sp"
+		        android:textColor="#FFFFFF"
+		        />    
+		    <ListView
+		        android:id="@+id/search_results"
+		        android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		        android:layout_below="@id/results_text"
+		        />
+		</RelativeLayout>		
+		
+	</RelativeLayout>
+
+
+</FrameLayout>

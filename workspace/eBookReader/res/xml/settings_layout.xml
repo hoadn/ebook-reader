@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    			  xmlns:custom="http://schemas.android.com/apk/res/com.example.ebookreader"
+    			  android:background="@drawable/wallpaper"
+    			  
+    >
+    <android:PreferenceCategory
+        android:title="Device Settings"
+        android:key="device_settings"
+        >
+    	    <android:CheckBoxPreference
+    	    	android:key="wifi"
+    	    	android:summary="Enable or Disable Wi-Fi"
+    	    	android:title="Wi-Fi"
+    	    />
+    	    <android:CheckBoxPreference
+    	    	android:key="bluetooth"
+    	    	android:summary="Enable or Disable Bluetooth"
+    	    	android:title="Bluetooth"
+    	    />
+    	    <android:CheckBoxPreference
+    	    	android:key="autosync"
+    	    	android:summary="Enable or Disable AutoSync"
+    	    	android:title="AutoSync"
+    	    />
+    	    <custom:SeekBarPreference
+    	        android:id="@+id/brightness_adjust"
+            	android:key="screenBrightness"
+                android:title="Brightness"
+                android:summary="Adjust Brightness Levels"
+                android:defaultValue="100"
+                android:max="200"
+            />
+    	    
+    </android:PreferenceCategory>
+    <android:PreferenceCategory
+        android:title="Account Settings"
+        android:key="account_settings"    
+        >
+		<com.example.ebookreader.FontListViewPreference
+   	        android:id="@+id/font_selector"
+           	android:key="font"
+            android:title="Font"
+            android:summary="Edit Font"	    
+		/>
+		<com.example.ebookreader.BackgroundListViewPreference
+   	        android:id="@+id/background_selector"
+           	android:key="background"
+            android:title="Background"
+            android:summary="Change the application background"	    
+		/>
+		<com.example.ebookreader.ThemeListViewPreference
+   	        android:id="@+id/theme_selector"
+           	android:key="theme"
+            android:title="Theme"
+            android:summary="Change the theme application"	    
+		/>				
+    </android:PreferenceCategory> 
+</PreferenceScreen>

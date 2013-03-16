@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+        android:id="@+id/preference_image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        />
+    <ImageView 
+        android:id="@+id/check"
+        android:layout_height="10dp"
+        android:layout_width="10dp"
+        android:layout_alignRight="@+id/preference_image"
+        android:layout_alignTop="@+id/preference_image"
+        />
+    
+</RelativeLayout>

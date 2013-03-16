@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eBook Reader</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_book_reader">Book Reader</string>
+    <string name="title_activity_category">Category</string>
+    <string name="title_activity_author">Author</string>
+    <string name="title_activity_search">Search</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_summary">Summary</string>
+    <string name="title_activity_fiction">FictionActivity</string>
+    <string name="title_activity_non_fiction">NonFictionActivity</string>
+
+</resources>

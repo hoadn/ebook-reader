@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryFragment" >
+	<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginTop="40dp"
+	>
+		<LinearLayout
+		    android:id="@+id/button_bar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="100dp"
+		    android:orientation="horizontal"
+		    >
+		    <Button
+		        android:id="@+id/fiction"
+		        android:text="Fiction"
+		        android:layout_width="100dp"
+		    	android:layout_weight="0.5"
+		    	android:layout_height="80dp"
+		        android:textSize="30sp"
+		        android:gravity="center"
+		        android:textColor="#FFFFFF"
+		        android:textStyle="bold"
+		        android:background="@drawable/tab_light_selector"		    	
+		        >
+		        <requestFocus/>
+		    </Button>
+		    <Button
+		        android:id="@+id/nonfiction"
+		        android:text="Non-Fiction"
+		        android:layout_width="100dp"
+		        android:layout_height="80dp"
+		    	android:layout_weight="0.5"
+		        android:textSize="30sp"
+		        android:gravity="center"
+		        android:textColor="#FFFFFF"
+		        android:textStyle="bold"
+		        android:background="@drawable/tab_light_selector"		    	
+		        />		    
+		</LinearLayout>
+	    
+		<com.example.ebookreader.HorizontalListView
+		    android:id="@+id/category_list"
+		    android:layout_marginTop="40dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="75dp"
+		    android:choiceMode="singleChoice"
+		    android:layout_below="@id/button_bar"
+		    />
+		
+		<GridView
+		    android:id="@+id/category_book_grid"
+		    android:layout_marginTop="40dp"
+		    android:layout_below="@id/category_list"
+		    android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:numColumns="3"
+		    android:horizontalSpacing="30dp"
+		    android:verticalSpacing="30dp"
+		    />
+	</RelativeLayout>
+    
+
+</FrameLayout>

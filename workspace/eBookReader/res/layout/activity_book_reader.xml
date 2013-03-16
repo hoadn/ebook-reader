@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookReaderActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_main"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white_overlay" >
+        
+        <Button
+            android:id="@+id/logout_book" 
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:text="LOGOUT"
+            android:textSize="40sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/dark_button_selector"
+            />
+        
+        <ImageButton
+            android:id="@+id/main_menu_book"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/list"
+            />
+        <ImageButton
+            android:id="@+id/home_button_book"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_toLeftOf="@id/main_menu_book"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/home"
+            />
+        <ImageButton
+            android:id="@+id/settings_button_book"
+            android:layout_width="70dp" 
+            android:layout_height="70dp"
+            android:layout_toLeftOf="@id/home_button_book"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/work"
+            />                          
+    </RelativeLayout>    
+    
+    <RelativeLayout
+        android:id="@+id/bottom_bar_main"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_overlay" >
+        
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="50dp" 
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/search"
+            />
+
+       <EditText
+           android:id="@+id/search_bar"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/search_button"
+           android:layout_toRightOf="@+id/search_button"
+           android:background="@drawable/search_text_selector"
+           android:ems="50"
+           android:hint="Search for word or phrase"
+           android:padding="10dp" >
+
+           <requestFocus />
+       </EditText>
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/book_section"
+        android:layout_above="@id/bottom_bar_main"
+        android:layout_below="@id/top_bar_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        >
+      	<android.support.v4.view.ViewPager
+        	android:id="@+id/book_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:layout_weight="1"
+        />
+
+    </LinearLayout>
+    
+</RelativeLayout>

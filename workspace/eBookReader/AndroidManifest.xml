@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ebookreader"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="11" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/book_icon"
+        android:label="eBook Reader"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ebookreader.HomeActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="stateUnchanged"
+            >
+        </activity>
+        <activity
+            android:name="com.example.ebookreader.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="stateUnchanged" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ebookreader.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/PreferencesTheme" >
+        </activity>
+        <activity
+            android:name="com.example.ebookreader.MenuActivity"
+            android:label="@string/title_activity_menu" 
+            android:windowSoftInputMode="stateUnchanged"
+            >
+        </activity>
+        <activity
+            android:name="com.example.ebookreader.BookReaderActivity"
+            android:label="@string/title_activity_book_reader" 
+            android:windowSoftInputMode="stateUnchanged"
+            >
+        </activity>
+        <activity
+            android:name="com.example.ebookreader.SummaryActivity"
+            android:label="@string/title_activity_summary" 
+            android:windowSoftInputMode="stateUnchanged"
+            >
+        </activity>
+        <activity
+            android:name="com.example.ebookreader.FictionActivity"
+            android:label="@string/title_activity_fiction" 
+            android:windowSoftInputMode="stateUnchanged"
+            >
+        </activity>
+        <activity
+            android:name="com.example.ebookreader.NonFictionActivity"
+            android:label="@string/title_activity_non_fiction" 
+            android:windowSoftInputMode="stateUnchanged"
+            >
+        </activity>
+    </application>
+
+</manifest>

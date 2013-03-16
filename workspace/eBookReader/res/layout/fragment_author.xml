@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthorFragment" >
+
+    <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+	>
+		<LinearLayout
+		    android:id="@+id/name_category"
+		    android:layout_width="match_parent"
+		    android:layout_height="100dp"
+			android:layout_marginTop="20dp"    
+		    >
+		    <Button 
+		        android:id="@+id/firstname_button"
+		        android:layout_weight="0.5"
+		        android:layout_height="80dp"
+		        android:layout_width="100dp"
+		        android:text="Firstname"
+		        android:textSize="30sp"
+		        android:gravity="center"
+		        android:textColor="#FFFFFF"
+		        android:textStyle="bold"
+		        android:background="@drawable/tab_light_selector"
+		        >
+		    <requestFocus/>    
+		    </Button>
+		    <Button
+		        android:id="@+id/surname_button"
+		        android:layout_weight="0.5"
+		        android:layout_height="80dp"
+		        android:layout_width="100dp"
+		        android:text="Surname"
+		        android:textSize="30sp"
+		        android:gravity="center"
+		        android:textColor="#FFFFFF"
+		        android:textStyle="bold"
+		        android:background="@drawable/tab_light_selector"/>		    
+		    
+		</LinearLayout>
+		<RelativeLayout
+		    android:layout_marginTop="40dp"
+		    android:layout_below="@id/name_category"
+		    android:layout_width="match_parent"
+		    android:layout_height="600dp"
+		    >
+		    <ExpandableListView 
+		        android:id="@+id/author_list"
+		        android:layout_width="650dp"
+		        android:layout_height="fill_parent"
+		        />
+		    <ListView 
+		        android:id="@+id/alphabet_list"
+		        android:layout_height="fill_parent"
+		        android:layout_width="150dp"
+		        android:layout_toRightOf="@id/author_list"
+		        android:choiceMode="singleChoice"
+		        />
+		</RelativeLayout>
+	</RelativeLayout>
+
+</FrameLayout>
